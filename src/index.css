@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary: #cc7722;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Simpsons';
+  src: local('MyFont'), url(./fonts/akbar.ttf) format('woff');
+}
+
+body {
+  background-color: var(--primary);
+}
+
+#quote-box {
+  width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border-radius: 20px;
+  padding: 30px;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+#text {
+  font-family: 'Simpsons', serif;
+  color: white;
+}
+
+.quote {
+  position: absolute;
+  display: block;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.open {
+  top: -15px;
+  left: 225px;
+}
+
+#author {
+  font-style: italic;
+  font-size: 1em;
+  text-align: right;
+  font-weight: 700;
+  padding-right: 30px;
+  color: var(--primary);
+}
+
+#new-quote {
+  float: right;
+}
+
+button {
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: var(--primary);
+  padding: 20px;
+  border-radius: 30px;
+  display: inline-block;
+  border: none;
+}
+
+#twitter {
+  float: left;
+}
+
+#twitter i {
+  color: #00acee;
 }
