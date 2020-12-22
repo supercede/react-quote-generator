@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Simpson's quote generator app intended to illustrate creating a CI/CD pipeline for React projects with CircleCI and Heroku
 
 ## Available Scripts
 
